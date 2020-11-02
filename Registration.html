@@ -10,7 +10,7 @@
 <body>
     <h1>Register</h1>
 
-    <form>
+    <form action="https://www.google.com" method="get">
         <div>
             <label for="first-name">First Name:</label>
             <input id="first-name" name="first-name" type="text" placeholder="John" required />
@@ -35,7 +35,8 @@
             <input id="email" name="email" type="email" placeholder="Your Email" required>
 
             <label for="password">Password:</label>
-            <input id="password" name="password" type="password" placeholder="Your Password" required>
+            <input id="password" name="password" type="password" placeholder="Your Password" minlength="5"
+                maxlength="10" required>
         </div>
 
         <div>
@@ -120,8 +121,6 @@
             <label for="termsAndConditions">I agree to the terms and conditions</label>
             <input id="termsAndConditions" type="checkbox" name="termsAndConditions" value="accepted">
         </div>
-
-
 
         <div>
             <input type="Submit">
